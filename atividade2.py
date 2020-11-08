@@ -27,14 +27,17 @@ def printbin(valor):
     print("{:17}".format(bin(valor)), end=" ")
 
 
+def printtab():
+    numero = 0
+    while numero < 225:
+        printdec(numero)
+        printoct(numero)
+        printhex(numero)
+        printbin(numero)
+        print("\n")
+        numero += 1
+
+
 print("{}       {}     {}            {}".format("Decimal", "Octal", "Hexdecimal", "Binario"))
 print("------------- --------- --------------------- -----------------")
-
-numero = 0
-while numero < 225:
-    printdec(numero)
-    printoct(numero)
-    printhex(numero)
-    printbin(numero)
-    print("\n")
-    numero += 1
+printtab()
