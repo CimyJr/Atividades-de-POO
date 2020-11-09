@@ -11,33 +11,33 @@ Decimal  Octal  Hexadecimal    Binario
 Código persistido em um repositório do GitHub."""
 
 
-def printdec(valor):
+def printDecimal(valor):
     print("{}            ".format(valor), end=" ")
 
 
-def printoct(valor):
+def printOctal(valor):
     print("{:9}".format(oct(valor)), end=" ")
 
 
-def printhex(valor):
+def printHexadecimal(valor):
     print("{:21}".format(hex(valor)), end=" ")
 
 
-def printbin(valor):
+def printBinario(valor):
     print("{:17}".format(bin(valor)), end=" ")
 
 
-def printtab():
+def imprimirTabela():
     numero = 0
     while numero < 225:
-        printdec(numero)
-        printoct(numero)
-        printhex(numero)
-        printbin(numero)
+        printDecimal(numero)
+        printOctal(numero)
+        printHexadecimal(numero)
+        printBinario(numero)
         print("\n")
         numero += 1
 
 
 print("{}       {}     {}            {}".format("Decimal", "Octal", "Hexdecimal", "Binario"))
 print("------------- --------- --------------------- -----------------")
-printtab()
+imprimirTabela()
