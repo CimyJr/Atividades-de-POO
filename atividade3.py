@@ -17,7 +17,7 @@ class Ponto:
 
 
     def setY(self, y):
-        self._y = x
+        self._y = y
 
 
     def qualQuadrante(self, x, y):
@@ -34,16 +34,16 @@ class Ponto:
             return 4
 
         elif(y == 0 and x == 0):
-            return Origem  
+            return 'Origem do plano'  
 
 
-class Quadrilatero():
+class Quadrilatero(Ponto):
     def __init__(self, P1, P2):
         self.P1 = P1
         self.P2 = P2
 
 
-    def contidoEmQ(a):
+    def contidoEmQ(self, a = Ponto, Quadrilatero):
         if(a.getX() <= P2.getX and a.getX() >= P1.getX() and a.getY() <= P1.getY() and a.getY() >= P2.getY()):
             return True
         else:
