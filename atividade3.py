@@ -37,7 +37,7 @@ class Ponto:
             return 'Origem do plano'  
 
 
-class Quadrilatero(Ponto):
+class Quadrilatero():
     def __init__(self, P1, P2):
         self.P1 = P1
         self.P2 = P2
